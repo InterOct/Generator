@@ -4,7 +4,7 @@ import by.interoct.generator.logic.ZULGenerator;
 import by.interoct.generator.ui.constant.EffectsUtil;
 import by.interoct.generator.ui.constant.Extensions;
 import by.interoct.generator.ui.constant.ListenersUtil;
-import by.interoct.generator.ui.controller.ControllerBase;
+import by.interoct.generator.ui.controller.BaseController;
 import by.interoct.parser.dom.entity.Element;
 import by.interoct.parser.dom.exception.ParserException;
 import by.interoct.parser.dom.exception.ReadSourceException;
@@ -26,7 +26,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class GenerateVmReferencesPreviewController extends ControllerBase {
+public class GenerateVmReferencesPreviewController extends BaseController {
     @FXML
     public TextArea taBefore;
     @FXML
