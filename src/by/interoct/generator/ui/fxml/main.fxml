@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0"
+      prefHeight="346.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="by.interoct.generator.ui.controller.impl.MainController">
+    <children>
+        <AnchorPane prefHeight="108.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+            <children>
+                <CheckBox fx:id="cbGenerateVmReferences" layoutX="120.0" layoutY="-20.0" mnemonicParsing="false"
+                          onAction="#actionGenerateVmReferences" prefHeight="25.0" prefWidth="553.0"
+                          text="Generate VM references" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0"/>
+            </children>
+            <padding>
+                <Insets left="40.0" right="40.0" top="40.0"/>
+            </padding>
+        </AnchorPane>
+        <AnchorPane fx:id="pathToZul" disable="true" prefHeight="52.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TextField fx:id="tfPathToZul1" minHeight="25.0" prefHeight="25.0" prefWidth="568.0"
+                           promptText="Path to .zul" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="110.0"
+                           AnchorPane.topAnchor="0.0"/>
+                <Button layoutX="688.0" layoutY="32.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0"
+                        text="Browse" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0"/>
+            </children>
+            <padding>
+                <Insets bottom="40.0" left="40.0" right="40.0"/>
+            </padding>
+        </AnchorPane>
+        <AnchorPane prefHeight="21.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Separator layoutX="21.0" layoutY="11.0" prefHeight="4.0" prefWidth="755.0"
+                           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0"/>
+            </children>
+            <padding>
+                <Insets left="20.0" right="20.0"/>
+            </padding>
+        </AnchorPane>
+        <AnchorPane prefHeight="13.0" prefWidth="280.0" VBox.vgrow="ALWAYS">
+            <children>
+                <CheckBox fx:id="cbGenerateVmFromZul" mnemonicParsing="false" onAction="#actionGenerateVmFromZul"
+                          prefHeight="17.0" prefWidth="221.0" text="Generate VM from .zul" AnchorPane.leftAnchor="0.0"
+                          AnchorPane.topAnchor="0.0"/>
+            </children>
+            <padding>
+                <Insets bottom="40.0" left="40.0" right="40.0" top="40.0"/>
+            </padding>
+        </AnchorPane>
+        <AnchorPane fx:id="pathToZulVm" disable="true" layoutX="10.0" layoutY="97.0" prefHeight="215.0"
+                    prefWidth="800.0" VBox.vgrow="ALWAYS">
+            <children>
+                <TextField fx:id="tfPathToZul2" minHeight="25.0" prefHeight="25.0" prefWidth="568.0"
+                           promptText="Path to .zul" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="110.0"
+                           AnchorPane.topAnchor="0.0"/>
+                <Button layoutX="688.0" layoutY="32.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0"
+                        text="Browse" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0"/>
+                <TextField fx:id="tfPathToVM" layoutX="50.0" layoutY="10.0" minHeight="25.0" prefHeight="25.0"
+                           prefWidth="568.0" promptText="Path to Vm" AnchorPane.leftAnchor="0.0"
+                           AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="40.0"/>
+                <Button layoutX="663.0" layoutY="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0"
+                        text="Browse" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0"/>
+                <CheckBox layoutX="-17.0" layoutY="79.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="221.0"
+                          text="Generate Models" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="79.0"/>
+            </children>
+            <padding>
+                <Insets bottom="40.0" left="40.0" right="40.0"/>
+            </padding>
+        </AnchorPane>
+        <AnchorPane prefHeight="92.0" prefWidth="800.0" VBox.vgrow="NEVER">
+            <children>
+                <Button layoutX="14.0" layoutY="353.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0"
+                        prefWidth="77.0" text="Cancel" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="100.0"/>
+                <Button fx:id="btnNext" defaultButton="true" disable="true" layoutX="694.0" layoutY="323.0"
+                        mnemonicParsing="false" onAction="#actionNext" prefHeight="25.0" prefWidth="77.0" text="Next"
+                        textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0"/>
+            </children>
+            <padding>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0"/>
+            </padding>
+        </AnchorPane>
+    </children>
+</VBox>

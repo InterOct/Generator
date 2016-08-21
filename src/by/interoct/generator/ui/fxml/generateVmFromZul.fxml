@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="600.0"
+      xmlns="http://javafx.com/javafx/8"
+      fx:controller="by.interoct.generator.ui.controller.impl.GenerateVmFromZulController">
+    <children>
+        <AnchorPane VBox.vgrow="ALWAYS">
+            <children>
+                <TableView fx:id="table" editable="true" layoutX="227.0" layoutY="143.0" prefHeight="504.0"
+                           prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="colType" prefWidth="267.0" text="Type"/>
+                        <TableColumn fx:id="colName" prefWidth="532.0" text="Reference name"/>
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                    </columnResizePolicy>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="96.0" prefWidth="800.0" VBox.vgrow="NEVER">
+            <children>
+                <Button fx:id="btnSave" defaultButton="true" disable="true" layoutX="421.0" layoutY="63.0"
+                        maxHeight="25.0" maxWidth="70.0" minHeight="25.0" minWidth="70.0" mnemonicParsing="false"
+                        onAction="#save" prefHeight="25.0" prefWidth="70.0" text="Next" AnchorPane.bottomAnchor="0.0"
+                        AnchorPane.rightAnchor="0.0"/>
+                <Button cancelButton="true" layoutX="231.0" layoutY="63.0" maxHeight="25.0" maxWidth="70.0"
+                        minHeight="25.0" minWidth="70.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0"
+                        prefWidth="70.0" text="Back" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="180.0"/>
+                <Button layoutX="341.0" layoutY="63.0" maxHeight="25.0" maxWidth="70.0" minHeight="25.0" minWidth="70.0"
+                        mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Skip"
+                        AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="90.0"/>
+            </children>
+            <padding>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="10.0"/>
+            </padding>
+        </AnchorPane>
+    </children>
+</VBox>
