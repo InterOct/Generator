@@ -20,7 +20,7 @@ public class TestVmCompleter {
     public static void main(String[] args) throws Exception {
         ClassModel classModel;
         try (ReadSource readSource = ReadSourceFactory.getInstance()
-                .getReadSource("D:\\workspaces\\cbt-nominated\\mca-staff-customer-ams\\mca-staff-customer-ams-composites\\src\\main\\resources\\web\\view\\customer\\product\\profile\\productProfile.zul")) {
+                .getReadSource("D:\\workspaces\\cbt-nominated\\mca-staff-customer-ams\\mca-staff-customer-ams-composites\\src\\main\\resources\\web\\view\\customer\\product\\profile\\productProfile.vm")) {
             classModel = VMGenerator.getInstance().generate(readSource);
         }
         try (FileInputStream in = new FileInputStream("D:\\workspaces\\cbt-nominated\\mca-staff-customer-ams\\mca-staff-customer-ams-composites\\src\\main\\java\\com\\sbsa\\mca\\csf\\customer\\ams\\enquires\\product\\profile\\ProductProfileVm.java");

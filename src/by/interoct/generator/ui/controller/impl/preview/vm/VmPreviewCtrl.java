@@ -1,4 +1,4 @@
-package by.interoct.generator.ui.controller.impl;
+package by.interoct.generator.ui.controller.impl.preview.vm;
 
 import by.interoct.generator.entity.Variable;
 import by.interoct.generator.ui.controller.BaseController;
@@ -14,7 +14,7 @@ import java.util.ResourceBundle;
 /**
  * @author Branavets_AY on 8/4/2016.
  */
-public class GenerateVmFromZulController extends BaseController {
+public class VmPreviewCtrl extends BaseController<VmPreviewData> {
 
     private static final String TYPE = "type";
     private static final String NAME = "name";
@@ -33,7 +33,7 @@ public class GenerateVmFromZulController extends BaseController {
 
     }
 
-    public void postInit() {
+    public void sInitialize() {
 
 
     }

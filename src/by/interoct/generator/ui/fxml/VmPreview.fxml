@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <VBox xmlns:fx="http://javafx.com/fxml/1" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="600.0"
       xmlns="http://javafx.com/javafx/8"
-      fx:controller="by.interoct.generator.ui.controller.impl.GenerateVmFromZulController">
+      fx:controller="by.interoct.generator.ui.controller.impl.preview.vm.VmPreviewCtrl">
     <children>
         <AnchorPane VBox.vgrow="ALWAYS">
             <children>

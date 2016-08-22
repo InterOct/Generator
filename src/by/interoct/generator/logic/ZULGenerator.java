@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 /**
- * Created by Branavets_AY on 7/26/2016.
+ * @author Branavets_AY on 7/26/2016.
  */
 public class ZULGenerator {
 

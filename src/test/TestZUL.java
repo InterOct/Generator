@@ -17,10 +17,10 @@ public class TestZUL {
     public static void main(String[] args) throws ReadSourceException, GeneratorException, IOException, DOMWriterException {
         Element root;
         try (ReadSource readSource = ReadSourceFactory.getInstance()
-                .getReadSource("D:\\workspaces\\cbt-nominated\\mca-staff-customer-ams\\mca-staff-customer-ams-composites\\src\\main\\resources\\web\\view\\customer\\balance\\certificateOfBalance.zul")) {
+                .getReadSource("D:\\workspaces\\cbt-nominated\\mca-staff-customer-ams\\mca-staff-customer-ams-composites\\src\\main\\resources\\web\\view\\customer\\balance\\certificateOfBalance.vm")) {
             root = ZULGenerator.getInstance().generate(readSource, true);
         }
-        try (FileDOMWriter domWriter = new FileDOMWriter(new BufferedWriter(new FileWriter("new.zul")))) {
+        try (FileDOMWriter domWriter = new FileDOMWriter(new BufferedWriter(new FileWriter("new.vm")))) {
             domWriter.write(root);
         }
     }

@@ -18,7 +18,7 @@ public class TestVM {
     public static void main(String[] args) throws ReadSourceException, ParserException, IOException, GeneratorException {
         Element root;
         try (ReadSource readSource = ReadSourceFactory.getInstance()
-                .getReadSource("D:\\workspaces\\cbt-nominated\\mca-staff-customer-ams\\mca-staff-customer-ams-composites\\src\\main\\resources\\web\\view\\customer\\product\\profile\\productProfile.zul")) {
+                .getReadSource("D:\\workspaces\\cbt-nominated\\mca-staff-customer-ams\\mca-staff-customer-ams-composites\\src\\main\\resources\\web\\view\\customer\\product\\profile\\productProfile.vm")) {
             ClassModel classModel = VMGenerator.getInstance().generate(readSource);
             for (Variable variable : classModel.getFields()) {
                 System.out.println(variable);

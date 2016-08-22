@@ -4,6 +4,9 @@ import by.interoct.generator.ui.constant.EffectsUtil;
 import by.interoct.generator.ui.constant.Extensions;
 import by.interoct.generator.ui.constant.ListenersUtil;
 import by.interoct.generator.ui.controller.BaseController;
+import by.interoct.generator.ui.controller.impl.preview.zul.ZULPreviewCtrl;
+import by.interoct.generator.ui.controller.impl.preview.zul.ZULPreviewData;
+import by.interoct.generator.ui.helper.SceneKapellmeister;
 import by.interoct.generator.ui.helper.ScenePool;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -16,7 +19,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class IndexController extends BaseController {
+public class IndexCtrl extends BaseController {
 
     @FXML
     private CheckBox cbGenerateVmFromZul;
@@ -67,7 +70,7 @@ public class IndexController extends BaseController {
 
 
     public void actionNext() throws IOException {
-
+        SceneKapellmeister.pilot(new ZULPreviewData().setPath(tfPathToZul1.getText()), ZULPreviewCtrl.class, getClass());
     }
 
 
